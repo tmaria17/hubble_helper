@@ -18,6 +18,7 @@ This project was submitted as the final project of Module 4 of the back-end prog
 
 ## Schema
 
+![](schema.png)
 
 ## Prerequisites
 
