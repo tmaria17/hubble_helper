@@ -6,13 +6,13 @@ require File.expand_path('../../config/environment', __FILE__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
-require 'vcr'
-require 'webmock/rspec'
+# require 'vcr'
+# require 'webmock/rspec'
 require 'database_cleaner'
 require 'simplecov'
 require 'factory_bot_rails'
 
-WebMock.disable_net_connect!(allow: ['http://localhost:3000/'])
+# WebMock.disable_net_connect!(allow: ['http://localhost:3000/'])
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
