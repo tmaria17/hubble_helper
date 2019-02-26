@@ -1,3 +1,4 @@
+@import "bootstrap";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +14,20 @@
  *= require_tree .
  *= require_self
  */
+ body{
+   background-image: linear-gradient(to right top, #41454b, #3e455a, #444266, #543c6d, #6a316d);
+ }
+ 
+ .flex_gallery{
+   padding: 0;
+   list-style: none;
+   margin: 20px auto 0;
+   width: 700px;
+ }
+
+ .flex_images {
+   float: left;
+   padding: 0;
+   margin: 0 5px 10px 5px;
+   margin-left: auto; margin-right: auto;  margin-top:50px; margin-bottom:0;
+   }
