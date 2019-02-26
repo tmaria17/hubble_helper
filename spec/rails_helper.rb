@@ -12,7 +12,16 @@ require 'database_cleaner'
 require 'simplecov'
 require 'factory_bot_rails'
 
-WebMock.disable_net_connect!(allow: ['http://localhost:3000/'])
+VCR.configure do |config|
+  config.ignore_localhost = true
+  config.allow_http_connections_when_no_cassette = true
+  config.cassette_library_dir = 'spec/cassettes'
+  config.hook_into :webmock
+  config.configure_rspec_metadata!
+  config.filter_sensitive_data("<NASA_KEY>") { ENV['NASA_KEY'] }
+end
+
+# WebMock.disable_net_connect!(allow: ['http://localhost:3000/'])
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
