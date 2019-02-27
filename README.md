@@ -10,6 +10,8 @@ Hubble Helper is an app for viewing and favoriting images from the Hubble API.
 
 This project was submitted as the final project of Module 4 of the back-end program at Turing School of Software and Design. The goal of the project was to mimic a take-home challenge that a person may receive during a job application process.
 
+Check out the deployed site here: https://hubble-helper.herokuapp.com/photos
+
 ## Table of Contents
 
 * Schema
