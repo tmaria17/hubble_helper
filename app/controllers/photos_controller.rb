@@ -1,9 +1,6 @@
 class PhotosController < ApplicationController
   def index
-    photo_data = NasaService.new.get_hubble_images
-    @photos = photo_data.map do |photo|
-               photo[:links][0][:href]
-
-              end
+    hubble_facade = HubbleFacade.new
+    @photos = hubble_facade.get_images
   end
 end
