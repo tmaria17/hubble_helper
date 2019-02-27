@@ -1,8 +1,6 @@
-$(document).on('page:load', console.log("heeeeey"))
-
 $(document).ready(function(){
   if($("#photo-div").length > 0) {
-    console.log("yoooo")
+    $("#favorite_photos").hide();
     $("#favorite-button").click(function(){
       console.log("heyyyy")
       $("#all_photos").hide();
