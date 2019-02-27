@@ -1,4 +1,12 @@
-<h1>Hubble Helper</h1>
+
+<div id = "photo-div">
+
+<div id = "all_photos">
+  <h1>Hubble Helper</h1>
+
+  <button id = "favorite-button">Favorites</button>
+
+<br />
 <div class = "row" >
    <% @photos.each do |photo| %>
  <div class='col-sm-4'>
@@ -11,4 +19,11 @@
   </ul>
   </div>
    <% end %>
+</div>
+</div>
+
+<div id = "favorite_photos">
+  <%= render :partial => '/favorites/favorites' %>
+
+</div>
 </div>
