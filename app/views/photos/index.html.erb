@@ -5,6 +5,9 @@
    <ul>
      <li > <div class = "image"><%= image_tag(photo.url) %></div></li>
      <li><%= photo.title %> </li>
+     <li><%= link_to 'Add to favorites', favorites_path(url: photo.url, title: photo.title ), method: :post %>
+</li>
+
   </ul>
   </div>
    <% end %>
