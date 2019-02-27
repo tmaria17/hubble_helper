@@ -1,7 +1,11 @@
 <h1>Hubble Helper</h1>
 <div class = "row" >
-
    <% @photos.each do |photo| %>
- <div class='col-md-6'> <%= image_tag(photo) %> </div>
+ <div class='col-sm-4'>
+   <ul>
+     <li > <div class = "image"><%= image_tag(photo.url) %></div></li>
+     <li><%= photo.title %> </li>
+  </ul>
+  </div>
    <% end %>
 </div>

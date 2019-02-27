@@ -14,20 +14,30 @@
  *= require_tree .
  *= require_self
  */
- body{
+  body{
    background-image: linear-gradient(to right top, #41454b, #3e455a, #444266, #543c6d, #6a316d);
- }
- 
- .flex_gallery{
-   padding: 0;
-   list-style: none;
-   margin: 20px auto 0;
-   width: 700px;
- }
+   color: white;
+  }
 
- .flex_images {
-   float: left;
-   padding: 0;
-   margin: 0 5px 10px 5px;
-   margin-left: auto; margin-right: auto;  margin-top:50px; margin-bottom:0;
-   }
+  ul{
+    list-style-type: none;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 25px;
+  }
+
+  .logo img{
+    width: 300px;
+    height: 132px;
+
+  }
+
+  .row{
+    padding-right: 25px;
+    padding-bottom:10px;
+    text-align: center;
+  }
